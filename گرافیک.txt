@@ -1,0 +1,26 @@
+import arcade
+arcade.open_window(500,600,"title")
+
+#زمینه
+arcade.set_background_color(arcade.csscolor.GRAY)
+
+#چمن
+arcade.start_render()
+arcade.draw_rectangle_filled(500,80,1000,200, arcade.csscolor.GREEN)
+#درخت چپ
+arcade.draw_rectangle_filled(80,200,20,60, arcade.csscolor.SIENNA)
+arcade.draw_ellipse_filled(80,290,80,125, arcade.csscolor.GREEN)
+
+#درخت راست
+arcade.draw_rectangle_filled(400,200,20,60, arcade.csscolor.SIENNA)
+arcade.draw_triangle_filled(400,200,20,60,200,100, arcade.csscolor.GREEN)
+
+
+#ساعت
+arcade.draw_rectangle_filled(250,460,140,200, arcade.csscolor.SIENNA)
+arcade.draw_circle_filled(250,490,50, arcade.csscolor.WHITE)
+arcade.draw_circle_filled(250,490,6, arcade.csscolor.BLACK)
+
+arcade.finish_render()
+
+arcade.run()
